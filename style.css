@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/* General Styles */
+body {
+    font-family: "Nunito", serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e9e5d6;
+    color: #362706;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #464e2e;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin-left: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color:#fff;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background-color: #acb992;
+    border-radius: 5px;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #464e2e;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+/* Beranda */
+.beranda {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.beranda-text {
+    max-width: 50%;
+    text-align: left;
+}
+
+.beranda-text h1 {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.beranda-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.beranda-image img {
+    max-width: 85%;
+    border-radius: 10px;
+}
+
+/* Profil */
+.profil {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.profil-image img {
+    max-width: 85%;
+    border-radius: 10px;
+}
+
+.profil-text {
+    max-width: 50%;
+    text-align: left;
+}
+
+.profil-text h1 {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.profil-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.profil-text a {
+    color: #608BC1;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.profil-text a:hover {
+    text-decoration: underline;
+}
+
+/* Produk */
+
+.tabel {
+    margin-bottom: 50px;
+}
+
+.tabel h2 {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.tabel-produk {
+    width: 80%;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.tabel-produk th, .tabel-produk td {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.tabel-produk th {
+    background-color: #464e2e;
+    color: white;
+}
+
+.tabel-produk td img {
+    width: 200px;
+    height: auto;
+    margin-top: 10px;
+}
+
+.list {
+    margin-top: 50px;
+}
+
+.list h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.list-produk {
+    list-style-type: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.list-produk li {
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Saran */
+.saran {
+    background-color: #fff;
+    padding: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.saran h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.saran p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.saran form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.saran form label {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.saran form input, .saran form textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+.saran form button {
+    background-color: #464e2e;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    border: none;
+}
+
+.saran form button:hover {
+    background-color: #acb992;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .beranda, .profil {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .beranda-text, .profil-text {
+        max-width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .tabel-produk td img {
+        max-width: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .beranda-text h1, .profil-text h1 {
+        font-size: 32px;
+    }
+
+    .beranda-text p, .profil-text p {
+        font-size: 16px;
+    }
+
+    .saran {
+        padding: 20px;
+    }
+}
